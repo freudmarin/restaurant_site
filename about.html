@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Trattoria Verde — About</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="pageRoot" class="bg-gray-50 text-gray-900">
+  <div data-include="partials/header.html"></div>
+
+  <section class="h-64 flex items-center justify-center bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80')">
+    <div class="bg-black bg-opacity-50 p-6 rounded-xl text-white" data-aos="fade-up">
+      <h2 class="text-4xl font-bold">About Us</h2>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-6 py-16 prose lg:prose-lg">
+    <h3 class="text-3xl font-bold text-green-700">Our Story</h3>
+    <p>Founded in 1998, Trattoria Verde began as a family restaurant in Florence. We grew while keeping our traditional recipes alive.</p>
+
+    <h3 class="text-3xl font-bold text-green-700">Our Philosophy</h3>
+    <p>We believe in simplicity — fresh ingredients, handcrafted dishes, and a warm atmosphere. Everything is prepared from scratch with local ingredients when possible.</p>
+
+    <h3 class="text-3xl font-bold text-green-700">Our Team</h3>
+    <p>Our chefs and staff combine decades of Mediterranean, Sicilian, and Tuscan cuisine experience to deliver hospitality and flavor.</p>
+  </section>
+
+  <div data-include="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script> AOS.init({duration:600, once:true}); </script>
+</body>
+</html>

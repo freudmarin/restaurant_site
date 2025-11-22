@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Trattoria Verde — Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="pageRoot" class="bg-gray-50 text-gray-900">
+
+  <div data-include="partials/header.html"></div>
+
+  <section class="h-64 flex items-center justify-center bg-cover bg-center"
+    style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1600&q=80')">
+    <div class="bg-black bg-opacity-50 p-6 rounded-xl text-white" data-aos="fade-up">
+      <h2 class="text-4xl font-bold">Contact</h2>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-12">
+    <div data-aos="fade-right">
+      <h3 class="text-3xl font-bold text-green-700 mb-4">Get in touch</h3>
+      <p class="mb-6">Feel free to reach out for reservations, events, or any questions.</p>
+
+      <p>📍 24 Via Roma, Florence, Italy</p>
+      <p>📞 +39 055 1234 567</p>
+      <p>📧 info@trattoriaverde.com</p>
+    </div>
+
+    <form class="bg-white rounded-xl shadow p-6 space-y-6" data-aos="fade-left" id="contactForm" novalidate>
+      <div class="grid grid-cols-1 gap-4">
+        <div>
+          <label for="contactName" class="block text-sm font-medium text-gray-700">Your name</label>
+          <input id="contactName" name="name" type="text" required autocomplete="name" aria-required="true"
+            class="mt-1 block w-full border border-gray-200 rounded-md p-3 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-200"
+            placeholder="Full name" />
+        </div>
+
+        <div>
+          <label for="contactEmail" class="block text-sm font-medium text-gray-700">Email</label>
+          <input id="contactEmail" name="email" type="email" required autocomplete="email" aria-required="true"
+            class="mt-1 block w-full border border-gray-200 rounded-md p-3 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-200"
+            placeholder="you@example.com" />
+        </div>
+
+        <div>
+          <label for="contactPhone" class="block text-sm font-medium text-gray-700">Phone (optional)</label>
+          <input id="contactPhone" name="phone" type="tel" autocomplete="tel"
+            class="mt-1 block w-full border border-gray-200 rounded-md p-3 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-200"
+            placeholder="+355 6x xxx xxxx" />
+        </div>
+
+        <div>
+          <label for="contactMessage" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="contactMessage" name="message" rows="5" required aria-required="true"
+            class="mt-1 block w-full border border-gray-200 rounded-md p-3 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-amber-200"
+            placeholder="How can we help?"></textarea>
+        </div>
+      </div>
+
+      <button
+        class="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md text-white bg-gradient-to-r from-green-700 to-emerald-600 hover:from-green-600 hover:to-emerald-500 shadow-md focus:outline-none focus:ring-2 focus:ring-amber-300"
+        type="submit">
+        Send Message
+      </button>
+      <p id="contactMsg" class="text-sm text-gray-600"></p>
+    </form>
+  </section>
+
+  <div data-include="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script> AOS.init({ duration: 600, once: true }); </script>
+</body>
+
+</html>

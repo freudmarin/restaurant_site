@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Trattoria Verde — Menu</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="pageRoot" class="bg-gray-50 text-gray-900">
+
+  <div data-include="partials/header.html"></div>
+
+  <!-- HERO -->
+  <section class="h-64 flex items-center justify-center bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80')">
+    <div class="bg-black bg-opacity-50 p-6 rounded-xl text-white" data-aos="fade-up">
+      <h2 class="text-4xl font-bold">Menu</h2>
+    </div>
+  </section>
+
+  <!-- MENU CATEGORIES -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Starters -->
+      <div data-aos="fade-up">
+        <h3 class="text-2xl font-bold text-green-700 mb-4">Starters</h3>
+        <ul class="space-y-4">
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex justify-between"><strong>Bruschetta</strong><span class="text-amber-600">€6</span></div>
+            <p class="text-sm text-gray-600">Toasted bread with tomatoes, basil & garlic.</p>
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex justify-between"><strong>Calamari Fritti</strong><span class="text-amber-600">€9</span></div>
+            <p class="text-sm text-gray-600">Lightly fried squid with lemon aioli.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Main Courses -->
+      <div data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-2xl font-bold text-green-700 mb-4">Main Courses</h3>
+        <ul class="space-y-4">
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex justify-between"><strong>Tagliatelle al Pesto</strong><span class="text-amber-600">€13</span></div>
+            <p class="text-sm text-gray-600">Pesto, pine nuts, parmesan.</p>
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex justify-between"><strong>Grilled Sea Bass</strong><span class="text-amber-600">€18</span></div>
+            <p class="text-sm text-gray-600">Served with seasonal vegetables.</p>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Desserts & Drinks -->
+      <div data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-2xl font-bold text-green-700 mb-4">Desserts & Drinks</h3>
+        <ul class="space-y-4">
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex justify-between"><strong>Tiramisu</strong><span class="text-amber-600">€6</span></div>
+            <p class="text-sm text-gray-600">Classic Italian dessert with espresso.</p>
+          </li>
+          <li class="bg-white p-4 rounded shadow">
+            <div class="flex justify-between"><strong>House Wine (glass)</strong><span class="text-amber-600">€5</span></div>
+            <p class="text-sm text-gray-600">Red or white.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div data-include="partials/footer.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script> AOS.init({duration:600, once:true}); </script>
+</body>
+</html>

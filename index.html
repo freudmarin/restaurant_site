@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Trattoria Verde — Home</title>
+
+  <!-- Tailwind CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="pageRoot" class="bg-gray-50 text-gray-900 transition-colors duration-300">
+
+  <!-- include header -->
+  <div data-include="partials/header.html"></div>
+
+  <!-- HERO -->
+  <section id="hero" class="h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('/assets/restaurant.png');">
+    <div class="bg-black bg-opacity-50 p-8 rounded-xl text-center text-white" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Authentic Mediterranean Flavors</h1>
+      <p class="mb-6 max-w-xl">Fresh ingredients, handcrafted recipes, warm atmosphere. Join us for an unforgettable dining experience.</p>
+      <div class="flex justify-center gap-4">
+        <a href="menu.html" class="bg-amber-600 px-6 py-3 rounded-md font-semibold hover:opacity-90">Explore Menu</a>
+        <a href="reserve.html" class="bg-transparent border border-white px-6 py-3 rounded-md">Reserve a Table</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SMALL FEATURES -->
+  <section class="py-12">
+    <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-right">
+        <h3 class="font-bold mb-2">Fresh Ingredients</h3>
+        <p class="text-sm text-gray-600">We source locally whenever possible to ensure maximal flavor.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
+        <h3 class="font-bold mb-2">Family Recipes</h3>
+        <p class="text-sm text-gray-600">Traditional recipes passed down through generations.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-left">
+        <h3 class="font-bold mb-2">Cozy Atmosphere</h3>
+        <p class="text-sm text-gray-600">A warm setting perfect for family dinners and dates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- include footer -->
+  <div data-include="partials/footer.html"></div>
+
+  <!-- scripts -->
+  <script src="js/include.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script> AOS.init({duration:600, once:true}); </script>
+</body>
+</html>

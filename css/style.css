@@ -1,0 +1,56 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+/* animations */
+.fade-in { animation: fadeIn 0.8s ease both; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+/* smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* dark mode colors */
+body.dark { background-color: #0b1220; color: #dbeafe; }
+body.dark a { color: #fef3c7; }
+body.dark .bg-white { background-color: #0f1724; }
+
+/* small responsive tweak for hero overlay */
+.hero-overlay { background: rgba(0,0,0,0.5); }
+
+/* improve focus for keyboard users on mobile nav links */
+#mobileNav a:focus {
+	outline: 3px solid rgba(245,158,11,0.9); /* amber-400-ish */
+	outline-offset: 2px;
+}
+
+/* ensure input focus-visible stands out for accessibility */
+input:focus-visible, textarea:focus-visible, select:focus-visible {
+	box-shadow: 0 0 0 3px rgba(250,204,21,0.18);
+}
+
+/* Dark-mode form adjustments
+	 Override common Tailwind utility colors so text is readable when inputs use
+	 `bg-white` or `text-gray-900` utilities but the page is in dark mode. */
+body.dark input.bg-white,
+body.dark textarea.bg-white,
+body.dark select.bg-white {
+	background-color: #0f1724;
+}
+
+/* Inputs that have `text-gray-900` should become light in dark mode */
+body.dark input.text-gray-900,
+body.dark textarea.text-gray-900,
+body.dark select.text-gray-900 {
+	color: #dbeafe;
+}
+
+/* Placeholder color for better contrast in dark mode */
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+	color: rgba(219,234,254,0.45);
+}
+
+/* Make borders slightly lighter in dark mode for better contrast */
+body.dark input,
+body.dark textarea,
+body.dark select {
+	border-color: rgba(203,213,225,0.12);
+}
