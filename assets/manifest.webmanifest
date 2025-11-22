@@ -1,0 +1,11 @@
+{
+  "name": "Trattoria Verde",
+  "short_name": "Trattoria",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f1724",
+  "theme_color": "#0f1724",
+  "icons": [
+    { "src": "assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
