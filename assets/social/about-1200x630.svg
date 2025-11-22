@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background image from Unsplash hero (linked) -->
+  <defs>
+    <linearGradient id="g" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#000" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <image href="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1600&q=80" x="0" y="0" width="1200" height="630" preserveAspectRatio="xMidYMid slice" />
+  <rect x="0" y="0" width="1200" height="630" fill="url(#g)" />
+
+  <!-- Left badge / logo area -->
+  <g transform="translate(72,72)">
+    <rect x="0" y="0" width="420" height="210" rx="16" fill="#0f1724" fill-opacity="0.6" />
+    <text x="24" y="56" font-family="Inter, Arial, sans-serif" font-size="40" fill="#dbeafe" font-weight="700">Trattoria</text>
+    <text x="24" y="106" font-family="Inter, Arial, sans-serif" font-size="40" fill="#f59e0b" font-weight="700">Verde</text>
+    <text x="24" y="158" font-family="Inter, Arial, sans-serif" font-size="16" fill="#cbd5e1">Family-run Italian restaurant since 1998</text>
+  </g>
+
+  <!-- Small decorative fork icon on the right -->
+  <g transform="translate(980,420) scale(1.15)" fill="#ffffff" opacity="0.9">
+    <path d="M4 2c0 0 4 0 4 6v30c0 3-2 5-5 5s-5-2-5-5V8c0-6 6-6 6-6"/>
+  </g>
+
+</svg>
